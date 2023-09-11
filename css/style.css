@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* Navbar */
+.navbar{
+    margin-top: 0;
+    padding-top: 0;
+}
+.navbar-brand {
+    font: 32px Viga;
+}
+
+#navbar {
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar-scrolled {
+  background-color: #FF6347; /* Warna latar belakang saat di-scroll */
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.7); /* Shadow warna hitam saat di-scroll */
+}
+
+
+/* bg mobile */
+/* CSS untuk navbar */
+#navbar {
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar-mobile {
+
+  background-color: #FF6347; /* Warna latar belakang pada tampilan mobile */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow warna hitam pada tampilan mobile */
+}
+
+/* akhir navbar */
+
+
+/* Jumbotron */
+.jumbotron {
+    background: url(../img/satu.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 540px;
+    position: relative;
+    z-index: -1;
+}
+
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    bottom: 0;
+}
+
+.jumbotron .container {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron .display-4 {
+    font-weight: 300;
+    font-size: 1.6em;
+    margin-top: 100px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+
+.jumbotron .container h4 {
+    margin-top: 350px;
+}
+/* akhir jumbotron */
+
+
+/* Info Panel */
+.info-panel {
+    background-color: white;
+    padding: 30px;
+    margin-top: -120px;
+    border-radius: 12px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+.info-panel h4 {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.info-panel p {
+    text-align: center;
+    font-size: 18px;
+    padding: 8px;
+    font-weight: lighter;
+    color: #acacac;
+}
+
+/* hilangkan h4 dan p kalau versi mobile */
+/* Menyembunyikan h4 dan p pada tampilan mobile */
+@media (max-width: 767px) {
+  .info-panel .col-sm h4,
+  .info-panel .col-sm p {
+    display: none;
+  }
+
+  .info-panel .col-sm {
+    text-align: center; /* Mengatur teks ke tengah horizontal */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Mengatur konten vertikal ke tengah */
+  }
+}
+
+
+/* akhir info pannel */
+
+
+/* my friends */
+.myfriends{
+    margin-top: 90px;
+    padding-top: 80px;
+}
+.myfriends h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.myfriends .card{
+    margin: 10px
+}
+.myfriends .card p{
+    font-size: 12px;
+}
+
+
+.card .card-footer{
+    text-align: center;
+}
+.card .card-footer img{
+    width: 30px;
+}
+/* akhir my friends */
+
+
+
+/* Workingspace */
+.workingspace {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.workingspace img {
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.workingspace h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.workingspace h3 span {
+    font-weight: 500;
+}
+
+.workingspace p {
+    font-size: 18px;
+    color: #ACACAC;
+    font-weight: 200;
+}
+
+.workingspace .dua img{
+    width: 40px;
+}
+/* akhir working spacing */
+
+
+/* gallery */
+
+/* akhir gallery */
+
+
+
+/* Testimonial */
+.testimonial {
+    margin-top: 130px;
+}
+
+.testimonial p {
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    filter: grayscale(1);
+}
+
+.testimonial .img-main {
+    width: 100px;
+    height: 100px;
+    margin-top: -5px;
+    filter: grayscale(0);
+}
+
+.testimonial .info-text h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.testimonial .info-text p {
+    font-size: 12px;
+    margin-top: -5px;
+    color: #acacac;
+    font-style: normal;
+}
+/* testimonial */
+
+
+
+
+
+/* artikel */
+.artikel{
+    text-align: center;
+    margin: 100px auto;
+}
+.artikel a{
+    text-decoration: none;
+    color: black;
+}
+/* akhir artikel */
+
+
+/* logo wa */
+.whatsapp-logo {
+  position: fixed;
+  bottom: 20px; /* Sesuaikan posisi vertikal sesuai kebutuhan */
+  right: 20px; /* Sesuaikan posisi horizontal sesuai kebutuhan */
+  z-index: 999; /* Pastikan z-index lebih tinggi dari elemen lain di halaman */
+}
+
+.whatsapp-logo img {
+  width: 60px; /* Sesuaikan lebar sesuai kebutuhan */
+  height: auto; /* Biarkan tinggi menyesuaikan dengan lebar */
+  border: none; /* Hilangkan border jika ada */
+}
+
+/* akhir logo wa */
+
+
+
+
+
+
+
+
+
+/* Utility */
+.tombol {
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+
+/* RESPONSIVE */
+@media (min-width: 992px) {
+    .navbar {
+        padding-top: 20px;
+    }
+    
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+    }
+
+    .navbar-brand, .nav-link:hover {
+        color: yellow !important;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        margin: auto;
+        margin-bottom: -8px;
+        width: 50%;
+        padding-top: 5px;
+    }
+
+
+    .jumbotron {
+        margin-top: -90px;
+        height: 640px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 5em;
+        margin-top: 150px;
+    }
+
+
+    .workingspace {
+        text-align: left;
+    }
+
+
+    .testimonial p {
+        font-size: 2em;
+    }
+
+}
+
+/* CSS untuk teks menu navbar pada tampilan mobile */
+@media (max-width: 767px) {
+  .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+    }
+  .navbar-brand, .nav-link:hover {
+        color: yellow !important;
+    }
+}
