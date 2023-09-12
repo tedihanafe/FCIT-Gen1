@@ -45,8 +45,6 @@
     background: url(../img/satu.JPG);
     background-size: cover;
     background-position: center;
-    height: auto; /* Ubah tinggi menjadi otomatis */
-    position: relative;
     z-index: -1;
 }
 
