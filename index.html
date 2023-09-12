@@ -15,6 +15,8 @@
     <!-- animate css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!-- css gsapp -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <title>Gen1</title>
   </head>
 
@@ -56,7 +58,7 @@
     <!-- container -->
     <div class="container">
 
-      <div class="row justify-content-center  animate__animated animate__rubberBand animate__slow	3s animate__delay-2s	2s">
+      <div class="panel row justify-content-center" id="panel">
         <div class="col-10 info-panel">
           <div class="row">
             <div class="col-sm">
@@ -273,8 +275,25 @@ const navbarToggle = document.getElementById("navbar-toggle");
 navbarToggle.addEventListener("click", function () {
   navbar.classList.toggle("navbar-mobile");
 });
-
 </script>
+
+
+
+<!-- js animasi gsapp -->
+<script>
+  // Menggunakan GSAP untuk menganimasikan elemen
+  gsap.to("#panel", {
+    duration: 2.8,    // Durasi animasi dalam detik
+    ease: "bounce.out", // Jenis easing untuk animasi
+    y: -100,           // Perubahan posisi elemen dalam sumbu Y
+    onComplete: function () {
+      // Callback yang akan dijalankan setelah animasi selesai
+      console.log("Animasi selesai!");
+    }
+  });
+</script>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
